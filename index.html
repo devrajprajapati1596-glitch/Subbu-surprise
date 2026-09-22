@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Subbu 🎀</title>
+
+<style>
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:Arial,sans-serif;
+  background:linear-gradient(135deg,#ffdce9,#eee0ff,#ffeef5);
+  overflow:hidden;
+}
+
+.card{
+  width:92%;
+  max-width:430px;
+  min-height:590px;
+  padding:35px 25px;
+  border-radius:30px;
+  text-align:center;
+  background:rgba(255,255,255,.72);
+  backdrop-filter:blur(12px);
+  box-shadow:0 15px 45px rgba(160,80,120,.18);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  position:relative;
+  overflow:hidden;
+}
+
+.emoji{
+  font-size:58px;
+  animation:pop .6s ease;
+  margin-bottom:12px;
+}
+
+h1{
+  color:#d84d83;
+  font-size:28px;
+  margin:8px 0 18px;
+}
+
+p{
+  color:#633f50;
+  font-size:17px;
+  line-height:1.7;
+  margin:0 auto;
+}
+
+.next{
+  margin:28px auto 0;
+  padding:13px 28px;
+  border:0;
+  border-radius:50px;
+  background:#f27aaa;
+  color:white;
+  font-size:16px;
+  font-weight:bold;
+  box-shadow:0 7px 20px rgba(220,80,130,.25);
+}
+
+.page{
+  margin-top:15px;
+  color:#a8758d;
+  font-size:13px;
+}
+
+.float{
+  position:absolute;
+  bottom:-50px;
+  animation:floatUp 4s linear forwards;
+  pointer-events:none;
+}
+
+@keyframes pop{
+  0%{transform:scale(.5);opacity:0}
+  100%{transform:scale(1);opacity:1}
+}
+
+@keyframes floatUp{
+  0%{
+    transform:translateY(0) rotate(0);
+    opacity:0;
+  }
+  15%{opacity:1}
+  100%{
+    transform:translateY(-650px) rotate(30deg);
+    opacity:0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card" id="card">
+
+  <div class="emoji" id="emoji">🥹🎀</div>
+
+  <h1 id="title">Hey meri Shona…</h1>
+
+  <p id="message">
+    Aaj aapka mood thoda kharab hai na… 🥺<br><br>
+    Isliye ye chhoti si cute si cheez sirf aapke liye banayi hai. 
+    👉🏻👈🏻🤍<br><br>
+    Bas ek-ek karke Next dabana… shayad ek chhoti si smile aa jaaye. ✨
+  </p>
+
+  <button class="next" onclick="nextPage()">Next 👉🏻👈🏻</button>
+
+  <div class="page" id="page">1 / 8</div>
+
+</div>
+
+<script>
+
+const pages = [
+
+{
+emoji:"🥹🎀",
+title:"Hey meri Shona…",
+message:`Aaj aapka mood thoda kharab hai na… 🥺<br><br>
+Isliye ye chhoti si cute si cheez sirf aapke liye banayi hai. 👉🏻👈🏻🤍<br><br>
+Bas ek-ek karke Next dabana… shayad aapke face par ek chhoti si smile aa jaaye. ✨`
+},
+
+{
+emoji:"🫂🌷",
+title:"Please mood kharab mat karo…",
+message:`Mujhe pata hai aaj jo bhi hua usse aapko bohot bura laga hoga. 🥺<br><br>
+Par please khud ko itna hurt mat karo.<br><br>
+<strong>Aap bohot achhi ho, bohot pyaari ho… aur kisi ki daant aapki value kam nahi kar sakti.</strong> 🤍`
+},
+
+{
+emoji:"🌙🫶🏻",
+title:"Aap akeli nahi ho…",
+message:`Jab dil heavy ho na, toh sab kuch akela mat sambhalna. 🥺<br><br>
+Aap bas thoda relax karo, deep breath lo aur khud ko thoda time do. 🌿🤍<br><br>
+<strong>Aap important ho.</strong> 🫶🏻`
+},
+
+{
+emoji:"🌷💗",
+title:"Aap bohot special ho…",
+message:`Shayad aapko abhi ye feel na ho, but you really are. 🥹<br><br>
+Aapki smile, aapki baatein, aapka cute sa gussa…<br><br>
+<strong>sab mere liye bohot precious hai.</strong> 💗✨`
+},
+
+{
+emoji:"🌹🫣",
+title:"Ek chhoti si shayari…",
+message:`Aapki ek muskurahat pe dil haar jaate hain,<br>
+Aap saamne aao toh alfaaz bhool jaate hain,<br>
+Kya jaadu hai aapki in pyaari si baaton mein,<br>
+Aapko dekhte hi hum khud hi sharma jaate hain… 🥹🌹`
+},
+
+{
+emoji:"🫣💞",
+title:"Ab itna bhi mat sharmao…",
+message:`Pata nahi shayari padh ke aap smile kar rahi ho ya sach mein sharma rahi ho… 🫣<br><br>
+Lekin agar smile aa gayi na,<br>
+toh mera mission successful. 🥹🤍<br><br>
+<strong>Ek aur cute si smile please? 👉🏻👈🏻</strong>`
+},
+
+{
+emoji:"💋🦋",
+title:"I love youuu meri Shona…",
+message:`Main bas aapko khush dekhna chahta hoon. 🥺<br><br>
+Jab aap low feel karo, bas yaad rakhna ki aap bohot loved ho. 🤍<br><br>
+<strong>Aapki ek chhoti si smile bhi bohot precious hai.</strong> 💞`
+},
+
+{
+emoji:"🥹🤍",
+title:"Meri Subbu…",
+message:`<strong>I love you sooo much meri Subbu… 🤍</strong><br><br>
+
+Aap mere liye bohot hi precious ho. 🫶🏻<br><br>
+
+Aaj jo bhi hua, uski wajah se please apna cute sa dil itna sad mat karo. 🥺<br>
+<strong>Aap bohot achhi ho, bohot pyaari ho aur bohot special ho.</strong> 🌷<br><br>
+
+Jab bhi sab kuch thoda zyada lage, khud ko thoda time dena. 🫂🤍<br><br>
+
+Mera bacha, meri babu, meri Shona, meri Jaanu, babywww, meri betuu… 💋🎀<br><br>
+
+<strong>I love you, Subbu. Sooo much. 🥹🤍</strong><br><br>
+
+Ab please ek cute si smile kar do… 👉🏻👈🏻🥰<br><br>
+
+✨ You deserve a little happiness today. ✨`
+}
+
+];
+
+let current = 0;
+
+function nextPage(){
+
+  if(current < pages.length - 1){
+    current++;
+  }else{
+    current = 0;
+  }
+
+  document.getElementById("emoji").innerHTML = pages[current].emoji;
+  document.getElementById("title").innerHTML = pages[current].title;
+  document.getElementById("message").innerHTML = pages[current].message;
+  document.getElementById("page").innerHTML =
+    (current + 1) + " / " + pages.length;
+
+  createHearts();
+}
+
+function createHearts(){
+
+  const emojis = [
+    "💗","🤍","🥹","🎀","✨",
+    "🌷","🦋","💞","🥰","🫣"
+  ];
+
+  for(let i=0;i<14;i++){
+
+    const heart = document.createElement("div");
+
+    heart.className="float";
+
+    heart.innerHTML =
+      emojis[Math.floor(Math.random()*emojis.length)];
+
+    heart.style.left =
+      Math.random()*100 + "%";
+
+    heart.style.fontSize =
+      (18 + Math.random()*20) + "px";
+
+    heart.style.animationDelay =
+      Math.random()*0.8 + "s";
+
+    document.getElementById("card").appendChild(heart);
+
+    setTimeout(()=>{
+      heart.remove();
+    },4500);
+  }
+}
+
+</script>
+
+</body>
+</html>
