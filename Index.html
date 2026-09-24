@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Subhana 🎀</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#050509;
+  color:#fff;
+  font-family:Georgia,serif;
+  overflow-x:hidden;
+}
+
+/* LUXURY BACKGROUND */
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-3;
+  background:
+    radial-gradient(circle at 20% 10%,#3a2634 0%,transparent 30%),
+    radial-gradient(circle at 85% 30%,#292033 0%,transparent 28%),
+    radial-gradient(circle at 50% 100%,#261a20 0%,transparent 35%),
+    linear-gradient(135deg,#030305,#0b080e,#050507);
+}
+
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-2;
+  opacity:.15;
+  background-image:
+    radial-gradient(#fff 1px,transparent 1px);
+  background-size:42px 42px;
+  pointer-events:none;
+}
+
+/* FLOATING SPARKLES */
+
+.sparkle{
+  position:fixed;
+  color:#e9c9ab;
+  opacity:.5;
+  animation:float 7s infinite ease-in-out;
+  z-index:-1;
+}
+
+.s1{left:8%;top:20%;font-size:13px}
+.s2{right:12%;top:35%;font-size:18px;animation-delay:2s}
+.s3{left:20%;bottom:25%;font-size:10px;animation-delay:4s}
+.s4{right:20%;bottom:15%;font-size:15px;animation-delay:1s}
+
+@keyframes float{
+  0%,100%{transform:translateY(0) rotate(0deg);opacity:.25}
+  50%{transform:translateY(-30px) rotate(180deg);opacity:.8}
+}
+
+/* HERO */
+
+.hero{
+  min-height:100svh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px 22px;
+  position:relative;
+}
+
+.hero-inner{
+  max-width:850px;
+}
+
+.small-title{
+  color:#d9b99c;
+  font-family:Arial,sans-serif;
+  font-size:11px;
+  letter-spacing:5px;
+  text-transform:uppercase;
+}
+
+.hero h1{
+  font-size:clamp(60px,16vw,125px);
+  font-weight:400;
+  line-height:.85;
+  margin:25px 0;
+  text-shadow:0 0 45px rgba(225,190,160,.15);
+}
+
+.hero h1 span{
+  color:#d9b99c;
+  font-style:italic;
+}
+
+.hero p{
+  max-width:620px;
+  margin:auto;
+  color:#bdb5b2;
+  font-family:Arial,sans-serif;
+  line-height:1.8;
+  font-size:14px;
+}
+
+.scroll{
+  position:absolute;
+  bottom:25px;
+  color:#817977;
+  font:10px Arial;
+  letter-spacing:4px;
+}
+
+.scroll-line{
+  width:1px;
+  height:40px;
+  background:linear-gradient(#d9b99c,transparent);
+  margin:10px auto 0;
+}
+
+/* MUSIC */
+
+.music{
+  width:min(600px,90%);
+  margin:-25px auto 50px;
+  position:sticky;
+  top:10px;
+  z-index:50;
+  padding:14px 16px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:30px;
+  background:rgba(8,7,11,.82);
+  backdrop-filter:blur(18px);
+  box-shadow:0 20px 60px rgba(0,0,0,.5);
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.music-icon{
+  width:43px;
+  height:43px;
+  border:1px solid #8d6e57;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#e3c1a1;
+  font-size:20px;
+}
+
+.music-text{
+  flex:1;
+}
+
+.music-text b{
+  font:600 13px Arial;
+}
+
+.music-text small{
+  display:block;
+  color:#817a78;
+  font:10px Arial;
+  margin-top:4px;
+}
+
+.music audio{
+  width:150px;
+  height:32px;
+}
+
+/* MAIN */
+
+.container{
+  width:min(900px,92%);
+  margin:auto;
+}
+
+.chapter{
+  padding:80px 0 30px;
+}
+
+.date{
+  color:#d9b99c;
+  font:600 10px Arial;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+.chapter h2{
+  font-size:clamp(36px,9vw,68px);
+  font-weight:400;
+  margin:12px 0 25px;
+}
+
+.card{
+  padding:clamp(25px,6vw,55px);
+  border-radius:30px;
+  border:1px solid rgba(255,255,255,.1);
+  background:
+    linear-gradient(145deg,
+    rgba(255,255,255,.08),
+    rgba(255,255,255,.025));
+  box-shadow:
+    0 30px 90px rgba(0,0,0,.45),
+    inset 0 1px rgba(255,255,255,.05);
+}
+
+.card p{
+  color:#e2dcda;
+  font-size:17px;
+  line-height:1.95;
+  margin-bottom:18px;
+}
+
+.card p:last-child{
+  margin-bottom:0;
+}
+
+.quote{
+  border-left:2px solid #d9b99c;
+  padding-left:20px;
+  color:#fff !important;
+  font-size:24px !important;
+  font-style:italic;
+  line-height:1.6 !important;
+}
+
+/* TIMELINE */
+
+.timeline{
+  margin-top:25px;
+}
+
+.timeline-item{
+  display:flex;
+  gap:20px;
+  padding:20px 0;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.timeline-item:last-child{
+  border-bottom:0;
+}
+
+.number{
+  color:#d9b99c;
+  font:600 11px Arial;
+  min-width:35px;
+}
+
+.timeline-item b{
+  font-size:18px;
+  font-weight:400;
+}
+
+.timeline-item small{
+  display:block;
+  color:#99918f;
+  font:12px/1.6 Arial;
+  margin-top:5px;
+}
+
+/* NINE MONTHS */
+
+.nine-months{
+  text-align:center;
+}
+
+.nine-months .card{
+  background:
+    radial-gradient(circle at 50% 0%,rgba(217,185,156,.12),transparent 45%),
+    linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.025));
+}
+
+.big-nine{
+  font-size:clamp(75px,20vw,160px);
+  color:#d9b99c;
+  line-height:.8;
+  margin:20px 0;
+  text-shadow:0 0 50px rgba(217,185,156,.2);
+}
+
+/* FINAL */
+
+.final{
+  padding:120px 0;
+  text-align:center;
+}
+
+.final .card{
+  padding:60px 25px;
+  background:
+    radial-gradient(circle at 50% 0%,rgba(217,185,156,.15),transparent 50%),
+    linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.025));
+}
+
+.hearts{
+  color:#d9b99c;
+  font-size:34px;
+  letter-spacing:10px;
+  margin-bottom:25px;
+}
+
+.final h2{
+  font-size:clamp(45px,11vw,85px);
+  font-weight:400;
+  margin-bottom:25px;
+}
+
+.final p{
+  max-width:680px;
+  margin:18px auto;
+  color:#c8c0bd;
+  font:15px/1.9 Arial;
+}
+
+.love{
+  font-family:Georgia !important;
+  color:#fff !important;
+  font-size:27px !important;
+}
+
+.promise{
+  font-family:Georgia !important;
+  color:#e3c5a7 !important;
+  font-size:22px !important;
+}
+
+/* FOOTER */
+
+footer{
+  text-align:center;
+  color:#625d5c;
+  font:9px Arial;
+  letter-spacing:3px;
+  padding:0 0 30px;
+  text-transform:uppercase;
+}
+
+/* REVEAL */
+
+.reveal{
+  opacity:0;
+  transform:translateY(35px);
+  transition:1s ease;
+}
+
+.reveal.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+  .music{
+    top:6px;
+    padding:10px;
+  }
+
+  .music audio{
+    width:105px;
+  }
+
+  .music-text b{
+    font-size:11px;
+  }
+
+  .card{
+    border-radius:24px;
+  }
+
+  .card p{
+    font-size:16px;
+  }
+
+  .quote{
+    font-size:21px !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="sparkle s1">✦</div>
+<div class="sparkle s2">✧</div>
+<div class="sparkle s3">✦</div>
+<div class="sparkle s4">✧</div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-inner">
+
+<div class="small-title">
+Devraj → Subhana
+</div>
+
+<h1>
+Our<br>
+<span>Story</span>
+</h1>
+
+<p>
+Subhana, ye sirf dates aur memories ki list nahi hai.
+Ye woh journey hai jo main tumhe apni taraf se,
+dil se yaad dilana chahta hoon.
+</p>
+
+</div>
+
+<div class="scroll">
+SCROLL
+<div class="scroll-line"></div>
+</div>
+
+</section>
+
+
+<!-- MUSIC -->
+
+<div class="music">
+
+<div class="music-icon">
+♪
+</div>
+
+<div class="music-text">
+<b>For You, Subhana 🎀</b>
+<small>Our special song</small>
+</div>
+
+<audio controls preload="none">
+<source src="tu-chahiye.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+
+<main class="container">
+
+
+<!-- 25 JANUARY -->
+
+<section class="chapter reveal">
+
+<div class="date">
+25 January · Farewell
+</div>
+
+<h2>
+The first look.
+</h2>
+
+<div class="card">
+
+<p>
+Subhana, mujhe aaj bhi hamara 10th class farewell yaad hai.
+Us din tumne white colour ka suit pehna tha aur black colour
+ke goggles lagaye the. Tumhari dance performance thi.
+</p>
+
+<p>
+Jab maine tumhe pehli baar dekha, maine tum par zyada dhyaan
+nahi diya tha, lekin tum mujhe bahut achhi, cute aur pyari lagi thi.
+Mujhe tab bilkul idea nahi tha ki ye chhota sa moment meri
+story ka beginning ban jayega.
+</p>
+
+</div>
+</section>
+
+
+<!-- INSTAGRAM -->
+
+<section class="chapter reveal">
+
+<div class="date">
+After Farewell · Instagram
+</div>
+
+<h2>
+Hi. Hello. You.
+</h2>
+
+<div class="card">
+
+<p>
+Farewell ke baad Instagram par hamare friends ka group tha.
+Wahi mujhe tum dobara dikhi aur maine tumse hi-hello se
+baat karna start ki.
+</p>
+
+<p>
+Ek-do din baat karne ke baad maine Vishal ko bataya ki
+mujhe tum achhi lagti ho. Phir usne group mein ye baat
+bata di.
+</p>
+
+<p>
+Tumne mujhse poocha ki tum mujhe achhi lagti ho,
+aur maine haan bol diya.
+</p>
+
+</div>
+</section>
+
+
+<!-- FEBRUARY -->
+
+<section class="chapter reveal">
+
+<div class="date">
+17 February
+</div>
+
+<h2>
+That “All the best.”
+</h2>
+
+<div class="card">
+
+<p>
+17 February ki subah tumne mujhe personally
+“All the best” bola tha.
+</p>
+
+<p>
+Shayad tumhare liye woh ek simple message tha,
+lekin mere liye woh bahut special tha.
+</p>
+
+<p>
+Usi din circumstances ke beech tumne mujhe haan kaha.
+Mujhe laga — shayad ye ladki mere liye hi bani hai.
+</p>
+
+</div>
+</section>
+
+
+<!-- ROSE -->
+
+<section class="chapter reveal">
+
+<div class="date">
+4 March · Rose
+</div>
+
+<h2>
+The rose I still remember. 🌹
+</h2>
+
+<div class="card">
+
+<p>
+Jab tumne mujhe mana kar diya tha, uske baad
+4 March ko main school gaya.
+</p>
+
+<p>
+School ke saamne, bahut saare bachchon ke saamne
+maine tumhe rose diya.
+</p>
+
+<p>
+Tumne mera rose accept nahi kiya.
+Lekin us moment ke baad bhi maine apni feelings
+ko chhod nahi diya.
+</p>
+
+</div>
+</section>
+
+
+<!-- MARCH -->
+
+<section class="chapter reveal">
+
+<div class="date">
+18 March · New Beginning
+</div>
+
+<h2>
+We continued.
+</h2>
+
+<div class="card">
+
+<p>
+Phir 18 March ko tumne mujhe dobara haan kaha,
+aur uske baad hamari story continue hui.
+</p>
+
+<p>
+Kuch din sab achha chala.
+Phir Eid par tumhari Appi ko hamare baare mein pata chala
+aur ek aur difficult phase aa gaya.
+</p>
+
+<p>
+Main efforts karta raha, aur 4 April ko tumne mujhe
+phir haan kaha.
+</p>
+
+</div>
+</section>
+
+
+<!-- MAY -->
+
+<section class="chapter reveal">
+
+<div class="date">
+21 May · Another Chance
+</div>
+
+<h2>
+Another “yes”.
+</h2>
+
+<div class="card">
+
+<p>
+Phir 21 May ko tumne mujhe dobara haan kaha.
+Maine purani mistakes ko side mein rakhkar
+relationship ko genuinely aage badhana chaha.
+</p>
+
+<p>
+Fights aur problems phir bhi aati rahi,
+lekin meri feelings aur efforts ruk nahi gaye.
+</p>
+
+</div>
+</section>
+
+
+<!-- BIRTHDAY -->
+
+<section class="chapter reveal">
+
+<div class="date">
+9 June → July · Birthday
+</div>
+
+<h2>
+A gift kept waiting. 🎁
+</h2>
+
+<div class="card">
+
+<p>
+9 June ko tumhara birthday tha.
+Main tumhare liye gift lekar aaya tha,
+lekin birthday par hum mil nahi paaye.
+</p>
+
+<p>
+Baad mein July mein jab hum mile,
+maine tumhe woh gifts diye.
+Uske baad tumne mujhe phir haan kaha.
+</p>
+
+<p>
+Phir bhi journey mein fights aur misunderstandings
+aati rahi.
+</p>
+
+</div>
+</section>
+
+
+<!-- SEPTEMBER -->
+
+<section class="chapter reveal">
+
+<div class="date">
+September · Exams
+</div>
+
+<h2>
+The moment everything felt real.
+</h2>
+
+<div class="card">
+
+<p>
+September mein exams ke time hum evening mein mile.
+Tumhare family ke ek relative ne humein saath dekh liya.
+Tumhare mummy-papa ne tumhe bahut daanta.
+</p>
+
+<p>
+Woh moment bahut scary tha,
+lekin situation sambhal gayi.
+Mujhe laga us din uparwale ne humein bacha liya.
+</p>
+
+</div>
+</section>
+
+
+<!-- JOURNEY -->
+
+<section class="chapter reveal">
+
+<div class="date">
+Everything between us
+</div>
+
+<h2>
+Not perfect. Still special.
+</h2>
+
+<div class="card">
+
+<p>
+Subhana, hamari journey mein bahut fights hui,
+misunderstandings hui, problems aayi aur bahut baar
+cheezein difficult hui.
+</p>
+
+<p>
+Logon ne bhi mana kiya, aur hamare beech religion
+ka difference bhi ek reality hai.
+</p>
+
+<p>
+Lekin mere liye hamari story sirf happy moments ki story nahi hai.
+Ye efforts, patience, feelings aur memories ki bhi story hai.
+</p>
+
+<p class="quote">
+“Har easy moment yaad reh sakta hai,
+lekin difficult moments humein story ki value samjhate hain.”
+</p>
+
+</div>
+</section>
+
+
+<!-- NINE MONTHS -->
+
+<section class="chapter reveal nine-months">
+
+<div class="date">
+17 October · Nine Months
+</div>
+
+<h2>
+Finally…
+</h2>
+
+<div class="card">
+
+<div class="big-nine">
+9
+</div>
+
+<h2>
+Months Complete 🤍
+</h2>
+
+<p>
+Subhana, finally aaj 17 October hai
+aur aaj apne 9 months complete kar liye hain. 🥹🤍
+</p>
+
+<p>
+Aaj bohot special moment hai.
+Itne saare moments, fights, misunderstandings
+aur memories ke baad aaj bas is moment ko
+saath mein feel karte hain.
+</p>
+
+<p>
+Main tumhe kabhi force nahi karna chahta.
+Chahe tum mujhe utna pyaar na kar pao
+jitna main tumse karta hoon,
+meri feelings tumhare liye fake nahi hain.
+</p>
+
+<p>
+Relationship ho ya na ho,
+main tumhari respect aur tumhare liye
+apni care dil mein rakhunga.
+</p>
+
+<p class="quote">
+Aise hi apne 7 saal tak hamesha saath rahenge.
+Promise. 🤍
+</p>
+
+</div>
+
+</section>
+
+
+<!-- 2032 -->
+
+<section class="chapter reveal">
+
+<div class="date">
+2032 · The Dream
+</div>
+
+<h2>
+Seven years from now.
+</h2>
+
+<div class="card">
+
+<p>
+Subhana, mera dream hai ki ye 7 saal bhi
+ek din complete ho jaayein.
+</p>
+
+<p>
+2032 mein main tumhare ghar tumhara haath
+maangne aaunga.
+</p>
+
+<p>
+Phir agar hum dono tab bhi ek-doosre ko choose
+karna chahein, toh apna future saath build karenge.
+</p>
+
+<p>
+Apna ghar hoga, hum duniya explore karenge,
+tumhare dreams ko support karenge aur ek
+beautiful life banane ki koshish karenge.
+</p>
+
+<p>
+Future mein problems aayengi, mujhe pata hai.
+Main chahta hoon ki hum unhe patience,
+respect aur understanding ke saath face karein.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- TIMELINE -->
+
+<section class="chapter reveal">
+
+<div class="card">
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="number">01</div>
+<div>
+<b>25 January</b>
+<small>The first look at farewell.</small>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="number">02</div>
+<div>
+<b>17 February</b>
+<small>That special “All the best”.</small>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="number">03</div>
+<div>
+<b>4 March</b>
+<small>The rose outside school.</small>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="number">04</div>
+<div>
+<b>18 March</b>
+<small>A new beginning.</small>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="number">05</div>
+<div>
+<b>21 May</b>
+<small>Another chance.</small>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="number">06</div>
+<div>
+<b>9 June → July</b>
+<small>Your birthday and the gift.</small>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="number">07</div>
+<div>
+<b>September</b>
+<small>The moment everything felt real.</small>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="number">08</div>
+<div>
+<b>17 October</b>
+<small>Nine months complete.</small>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="number">09</div>
+<div>
+<b>2032</b>
+<small>The future dream.</small>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- FINAL -->
+
+<section class="final reveal">
+
+<div class="container">
+
+<div class="card">
+
+<div class="hearts">
+♡ ♡ ♡
+</div>
+
+<div class="date">
+For Subhana
+</div>
+
+<h2>
+Happy 9 Months.
+</h2>
+
+<p class="promise">
+Aaj ka ye moment hum saath feel karte hain.
+Itni saari memories ke baad ye din mere liye
+bohot special hai.
+</p>
+
+<p>
+Main hamesha, hamesha tumhara loyal rahunga.
+Tumhari happiness, tumhare dreams aur tumhari
+respect mere liye important hain.
+</p>
+
+<p>
+Aage jo bhi aaye, main chahta hoon ki hum
+honestly, patiently aur respect ke saath
+apni journey ko yaad rakhein.
+</p>
+
+<p class="love">
+I love you, Subhana. 🤍<br>
+I love you so much. 🎀
+</p>
+
+<div class="hearts">
+♡
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+Devraj → Subhana · Our Story
+</footer>
+
+
+<script>
+
+const observer =
+new IntersectionObserver(
+(entries)=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+},
+{threshold:0.12}
+);
+
+document
+.querySelectorAll(".reveal")
+.forEach(el=>observer.observe(el));
+
+</script>
+
+</body>
+</html>
